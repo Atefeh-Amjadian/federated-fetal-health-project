@@ -1,0 +1,30 @@
+Scenario 2 — GAN-based Augmentation (CTGAN)
+==========================================
+
+Dataset:
+Fetal Health Classification (Kaggle)
+https://www.kaggle.com/datasets/andrewmvd/fetal-health-classification
+
+Protocol:
+- Split into train/test with stratification
+- Train CTGAN only on TRAIN
+- Generate synthetic samples to balance minority classes
+- Keep TEST untouched
+- Train same models as Scenario 1 for fair comparison
+
+CTGAN settings:
+- epochs: 100
+- batch_size: 500
+
+Results:
+1) Multinomial Logistic Regression + GAN
+   Accuracy: 0.8380
+   F1 macro: 0.6592
+
+2) LightGBM + GAN
+   Accuracy: 0.9389
+   F1 macro: 0.8853
+
+Notes:
+- Only the training distribution was changed (augmentation).
+- Models remained unchanged to isolate augmentation effect.
