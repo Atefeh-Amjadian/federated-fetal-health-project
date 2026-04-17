@@ -1,0 +1,32 @@
+Scenario 1 - Baseline Centralized Models
+=======================================
+
+Dataset:
+Fetal Health Classification (Kaggle)
+
+Models Evaluated:
+1. Multinomial Logistic Regression
+2. LightGBM Classifier
+
+Evaluation Metrics:
+- Accuracy
+- Macro F1-score
+
+---------------------------------------
+
+Logistic Regression Results:
+Accuracy: 0.8849
+F1 Macro: 0.7790
+
+---------------------------------------
+
+LightGBM Results:
+Accuracy: 0.9507
+F1 Macro: 0.9056
+
+---------------------------------------
+
+Notes:
+- Logistic Regression provides interpretability.
+- LightGBM achieves higher predictive performance.
+- This scenario serves as the baseline for GAN and Federated Learning extensions.
