@@ -1,0 +1,18 @@
+Scenario 3 - Federated Learning
+
+Setup:
+- 3 clients
+- non-IID split without overlap
+- manual FedAvg
+- local epochs: 3
+- federated rounds: 15
+- class-weighted loss
+
+Results:
+Accuracy: 0.8732
+F1 macro: 0.7866
+
+Notes:
+- Test set remained untouched.
+- Each client used only its own local data.
+- Raw data was not shared between clients.

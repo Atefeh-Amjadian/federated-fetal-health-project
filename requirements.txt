@@ -6,4 +6,4 @@ matplotlib
 seaborn
 sdv
 ctgan
-
+torch
