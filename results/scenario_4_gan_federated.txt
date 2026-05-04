@@ -1,0 +1,18 @@
+Scenario 4 - GAN-Augmented Federated Learning
+
+Setup:
+- CTGAN augmentation on training data only
+- 3 clients
+- non-IID split without overlap
+- manual FedAvg
+- local epochs: 3
+- federated rounds: 15
+
+Results:
+Accuracy: 0.8333
+F1 macro: 0.6450
+
+Notes:
+- Test set remained untouched.
+- Synthetic samples were generated only from the training set.
+- Raw client data was not shared during federated training.

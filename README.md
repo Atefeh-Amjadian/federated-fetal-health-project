@@ -39,6 +39,15 @@ Results:
 
 ---
 
+### Scenario 4 — GAN-Augmented Federated Learning
+
+This scenario explores the impact of GAN-based data augmentation on federated learning under non-IID conditions.
+
+Results:
+- Accuracy: 0.8310
+- F1 macro: 0.6388
+---
+
 ## How to Run
 
 ```bash
